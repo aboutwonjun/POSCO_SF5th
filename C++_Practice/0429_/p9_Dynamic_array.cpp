@@ -11,8 +11,7 @@ int main () {
 
     //2. 행과 열의 수를 입력받기
     cout << "행과 열의 수를 입력해주세요. \n"; 
-    cin >> x; 
-    cin >> y;
+    cin >> x >> y;
 
     //동적 배열 설정 
     cout << "행렬 원소를 입력해주세요. \n"; 
@@ -48,7 +47,6 @@ int main () {
 
 
     //6. 각 열의 합
-
 	cout << endl << "각 열의 합: " << endl;
 	for (int i = 0; i < y; i++)
 	{
@@ -62,6 +60,12 @@ int main () {
 		cout << colSum << endl;
 
 	}
+    
+
+    //7. 동적할당 해제 
+    for (int i = 0; i < x; i++) {
+        delete[] arr2[i];
+    }
 
     
 
