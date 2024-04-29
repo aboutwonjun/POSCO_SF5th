@@ -21,7 +21,9 @@ int main() {
 
     vector<int> test_vec1 (1);
     start = clock();
-    test_vec1.push_back(100000000);
+    for (int i = 0; i < 100000000; ++i) {
+        test_vec1.push_back(i);
+    }
     end = clock();
 
     result = (double)(end-start);
@@ -33,7 +35,9 @@ int main() {
     // 4. reserve() 1억개 만큼의 공간을 예약.
     test_vec1.reserve(100000000);
     start = clock();
-    test_vec2.push_back(100000000);
+    for (int i = 0; i < 100000000; ++i) {
+        test_vec1.push_back(i);
+    }
     end = clock();
 
     result = (double)(end-start);
