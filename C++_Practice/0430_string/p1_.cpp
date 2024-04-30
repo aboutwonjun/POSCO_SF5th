@@ -13,16 +13,16 @@ int main () {
     cout << str.length() << endl;
 
     //3. 100번째 문자 출력.
-    cout << "100번째 문자출력: ";
+    cout << "100번째 문자출력 : ";
     cout << str.at(99) << endl;
 
     //4. find 
-    cout << "two 문자가 처음 나오는 Index 출력 :";
+    cout << "two 문자가 처음 나오는 Index 출력 : ";
     cout << str.find("two") << endl;
 
     //5. two라는 문자가 두번째 나오는 인덱스 출력
-    cout << "two 문자가 두번째 나오는 Index 출력: ";
-    cout << str.find("two", 12) << endl;
+    cout << "two 문자가 두번째 나오는 Index 출력 : ";
+    cout << str.find("two", str.find("two")+1) << endl;
 
     //cout << "two라는 문자가 처음 나오는 index: " << str.find("two", str.find("two")+1) << endl;
 
