@@ -66,9 +66,6 @@ int main() {
     //YYYYMMDD
     int earliest_birth_index = 0; // 가장 먼저 입력 받은 학생부터 비교
 
-    // 3-3. 가장 빠른 생일 찾기
-    int earliest_birth_index = 0; // 가장 먼저 입력 받은 학생으로 초기화
-
     for (int i = 1; i < student_num; i++) {
         if (birth_month[i] < birth_month[earliest_birth_index]) {
             earliest_birth_index = i; // 더 빠른 월을 가진 학생의 인덱스 저장
@@ -79,13 +76,14 @@ int main() {
     cout << "가장 빠른 생일(어린)을 가진 학생은 " << name[earliest_birth_index] << "입니다." << endl;
 
 
-
     // 동적 배열 해제
     delete[] name;
     delete[] age;
-    delete[] birth;
-
+    delete[] birth_year;
+    delete[] birth_month;
+    delete[] birth_day;
+    
     return 0;
 
     }
-
+}
