@@ -28,7 +28,7 @@ int main () {
     s.replace(s.find(find_str), find_str.length(), replace_str);
     cout << "부분 문자열 변경 : " << s << endl;
 
-
+    //4번 간단 버전 
     s.replace(2, 4, "oooo");
     cout < s < endl;
 
