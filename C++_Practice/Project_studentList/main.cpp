@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "MyFunctions.h"
-#include "MyFunctions.cpp"
+
 using namespace std; 
 
 

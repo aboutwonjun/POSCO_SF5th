@@ -1,6 +1,5 @@
 // MyFunctions.h
 
-
 #pragma once
 #ifndef MYFUNCTIONS_H
 #define MYFUNCTIONS_H
@@ -8,6 +7,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
+#include "MyFunctions.cpp"
 
 using namespace std; 
 

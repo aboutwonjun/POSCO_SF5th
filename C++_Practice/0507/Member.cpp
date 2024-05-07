@@ -22,14 +22,13 @@ int main()
 
     int i = 0;
 
-
     while (true) // 무한 루프
     {
-        cout << i + 1 << "번째 회원의 이름과 비밀번호를 입력하세요: ";
+        cout << i + 1 << "번째 회원의 이름을 입력하세요: ";
         cin >> name;
         if (name == "quit") // 종료 조건 확인
             break;
-
+        cout << i + 1 << "번째 회원의 비밀번호를 입력하세요: ";
         cin >> pw;
 
         members.push_back(name);
@@ -51,19 +50,6 @@ int main()
         cout << s << endl;
     }
     readfile.close();
-
-
-
-
-
-
-
-
-    
-
-
-
-
 
 
 }
