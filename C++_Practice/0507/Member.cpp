@@ -22,7 +22,7 @@ int main()
 
     int i = 0;
 
-    while (true) // 무한 루프
+    while (true) // 무한 루프 n
     {
         cout << i + 1 << "번째 회원의 이름을 입력하세요: ";
         cin >> name;
